@@ -6,7 +6,7 @@ pip install "fastapi[standard]"
 ```
 
 ## Run
-Dataset: <a href="https://github.com/yuda-notes/teaching-notes/blob/main/dataset/trips.csv">link</a>
+Dataset: <a href="https://raw.githubusercontent.com/yuda-notes/teaching-notes/refs/heads/main/dataset/trips.csv">link</a>
 ```bash
 fastapi dev
 
