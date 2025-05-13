@@ -12,3 +12,6 @@ fastapi dev
 # or
 fastapi dev main.py
 ```
+
+## Demo
+Visit: https://sample-fastapi-csv.vercel.app
