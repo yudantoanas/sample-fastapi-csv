@@ -15,3 +15,4 @@ fastapi dev main.py
 
 ## Demo
 Visit: https://sample-fastapi-csv.vercel.app
+API Docs: Visit: https://sample-fastapi-csv.vercel.app/docs
