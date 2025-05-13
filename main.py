@@ -17,14 +17,14 @@ app = FastAPI()
 
 
 @app.get("/")
-async def getWelcome():
+def getWelcome():
     return {
         "msg": "Sample FastAPI CSV"
     }
 
 
 @app.get("/data")
-async def getAllData():
+def getAllData():
     df = pd.read_csv("dataset.csv")
 
     return {
@@ -33,7 +33,7 @@ async def getAllData():
 
 
 @app.get("/data/{location}")
-async def getDataByLocation(location: str):
+def getDataByLocation(location: str):
     df = pd.read_csv("dataset.csv")
 
     df = df[df.location == location]
@@ -48,7 +48,7 @@ async def getDataByLocation(location: str):
 
 
 @app.patch("/data/{id}")
-async def updateProfile(id: int, profile: Profile):
+def updateProfile(id: int, profile: Profile):
     df = pd.read_csv("dataset.csv")
 
     filter = df[df.id == id]
@@ -69,7 +69,7 @@ async def updateProfile(id: int, profile: Profile):
 
 
 @app.post("/data")
-async def createProfile(profile: Profile):
+def createProfile(profile: Profile):
     df = pd.read_csv("dataset.csv")
 
     newData = pd.DataFrame()
